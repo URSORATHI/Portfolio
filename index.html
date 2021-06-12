@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Portfolio" />
+    <title>U N N A T I</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/> 
+   
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+ <nav1>
+				<span class="logo">{US}</span>
+			</nav1>
+    <header>
+  
+    <h>UNNATI SORATHI</h>
+     </header>
+   <div class="main">
+     <h1>Hello!</h1>
+</div>
+<nav>
+<div class="intro-content">
+
+<ul class="contact">
+
+					<li>
+						<a
+							href="mailto:unnatisorathi21@gmail.com"
+							class="icon"
+							target="_blank"
+							alt="Unnati Sorathi E-Mail"
+							rel="noopener"
+							rel="noreferrer"
+							aria-label="E-mail Unnati Sorathi"
+						>
+					           <i class="fa fa-envelope" aria-hidden="true"></i>
+						</a>
+						<p class="desc hide">E-Mail</p>
+					</li>
+					<li>
+						<a
+							href="https://github.com/URSORATHI"
+							class="icon"
+							target="_blank"
+							alt="Unnati Sorathi GitHub"
+							rel="noopener"
+							rel="noreferrer"
+							aria-label="GitHub Unnati Sorathi"
+						>
+							<i class="fa fa-github" aria-hidden="true"></i>
+						</a>
+						<p class="desc hide">GitHub</p>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/unnati-sorathi-8516941b1/"
+							class="icon"
+							target="_blank"
+							alt="Unnati Sorathi LinkedIn"
+							rel="noopener"
+							rel="noreferrer"
+							aria-label="LinkedIn Unnati Sorathi"
+						>
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+						<p class="desc hide">LinkedIn</p>
+					</li>
+					
+					<li>
+						<a
+							href="https://drive.google.com/file/d/1J_OtQsgseipuFZhfYh5zoFYATIUIZlGf/view?usp=sharing"
+							class="icon"
+							target="_blank"
+							alt="Unnati Sorathi Resume"
+							rel="noopener"
+							rel="noreferrer"
+							aria-label="Resume Unnati Sorathi"
+						>
+							<i class="fa fa-file-text" aria-hidden="true"></i>
+						</a>
+						<p class="desc hide">Resume</p>
+					</li>
+				</ul>
+</div>
+  </nav>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+   
+<script>
+ document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Hello! I am Unnati, a web developer by passion and an engineer by education!"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+   
+    
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+</script>
+</body>
+</html>
