@@ -191,7 +191,9 @@ nav{
 /* responsive */
 
 @media only screen and (max-width: 600px) {
-      
+        .logo {
+		size: 0.5em;
+	}
 
 	.contact {
 		display: flex;
