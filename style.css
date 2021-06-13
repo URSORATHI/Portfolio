@@ -190,30 +190,3 @@ nav{
 
 /* responsive */
 
-@media only screen and (max-width: 600px) {
-        .logo {
-		size: 0.5em;
-	}
-
-	.contact {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-	}
-
-        .icon {
-             font-size: 2em;
-             margin: 50em 0.5em;
-             padding: 7px 11px;
-     
-        }
-	
-	.icon:hover + .hide {
-		display: hidden;
-		opacity: 0; 
-	}
-
-
-}
