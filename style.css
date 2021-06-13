@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -30,13 +31,27 @@ nav1 {
     position:fixed;
     z-index:5;
     text-align: center;
-    top: 20px;
-    left: 20px;
+    left:20px;
+    
     animation: mymove 0.5s;
     letter-spacing: 5px;
     word-spacing: 10px;
 }
 
+
+.logo{
+    padding-right: 1400px;
+    padding-top: 10px;
+}
+     
+
+
+.moon{
+     padding-left:1000px;
+    
+    
+
+}
 h1 {
     color:#ffffff;   
     font-size: 30px; 
@@ -176,9 +191,7 @@ nav{
 /* responsive */
 
 @media only screen and (max-width: 600px) {
-	nav1 {
-		size: 0.5em;
-	}
+      
 
 	.contact {
 		display: flex;
@@ -188,12 +201,12 @@ nav{
 		position: relative;
 	}
 
-	.icon {
-		font-size: 1em;
-		margin: 50em 0.5em;
-		padding: 7px 11px;
-	}
-
+        .icon {
+             font-size: 2em;
+             margin: 50em 0.5em;
+             padding: 7px 11px;
+     
+        }
 	
 	.icon:hover + .hide {
 		display: hidden;
