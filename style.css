@@ -232,7 +232,7 @@ nav{
 header {
     color:#ffffff;   
     font-size: 20px; 
-    font-family: cursive;
+    font-family: 'Pangolin',cursive;
     font-style: italic;
     left:10px;
 }
@@ -241,7 +241,7 @@ header {
 nav1 {
     color:#ffffff;   
     font-size: 25px; 
-    font-family: cursive;
+    font-family: 'Pangolin',cursive;
     font-style: italic;
 }
 
